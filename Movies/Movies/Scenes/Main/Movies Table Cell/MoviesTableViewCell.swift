@@ -46,7 +46,7 @@ class MoviesTableViewCell: UITableViewCell {
             case .success:
                 break
             case .failure:
-                break
+                self.posterImageView.image = UIImage(named: "avatar-default")
             }
         })
     }
